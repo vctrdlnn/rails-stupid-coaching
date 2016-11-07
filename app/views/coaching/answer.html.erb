@@ -1,0 +1,11 @@
+<div class="answer">
+  <div class="answer-box">
+    <h1><%= params[:query] %></h1>
+    <p>-- you</p>
+  </div>
+  <div class="answer-box">
+    <h1><%= @possible_answers.sample %></h1>
+    <p>-- Your great coach</p>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
